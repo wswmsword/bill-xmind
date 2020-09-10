@@ -1,0 +1,152 @@
+.dashboard {
+   padding: 18px 36px;
+   max-width: 680px;
+   margin: 36px auto;
+   background-color: #414659b0;
+   border-radius: 5px;
+   min-height: 136px;
+}
+
+.dash_year,
+.dash_month {
+   display: flex;
+   justify-content: space-between;
+   gap: 18px;
+}
+
+.year_income,
+.year_expense,
+.month_income,
+.month_expense {
+   flex-grow: 1;
+   min-height: 136px;
+   border-radius: 7px;
+   position: relative;
+}
+
+.year_income,
+.month_income {
+   background-image: linear-gradient(to bottom, rgb(9, 172, 146), rgb(97, 184, 168));
+}
+
+.year_expense,
+.month_expense {
+   background-image: linear-gradient(to bottom, rgb(196, 66, 43), rgb(189, 97, 90));
+}
+
+.dash_title {
+   font-size: 18px;
+   color: #daede2;
+   font-weight: bold;
+   margin-bottom: 7px;
+}
+
+.ycard_title,
+.mcard_title {
+   font-size: 36px;
+   font-weight: bold;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #c5fbf2;
+   text-shadow: 1px 1px 0 rgb(9 136 116), 2px 2px 0 rgb(39 157 137), 3px 3px 0 rgb(70 163 146);
+}
+
+.year_expense .ycard_title,
+.month_expense .mcard_title {
+   color: #fae5e5;
+   text-shadow: 1px 1px 0 rgb(174 48 37), 2px 2px 0 rgb(176 71 57), 3px 3px 0 rgb(169 77 68);
+}
+
+.ycard_amount,
+.mcard_amount {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 57px;
+   font-weight: bold;
+   color: #daede2;
+}
+
+.dash_item {
+   margin-bottom: 36px;
+}
+
+.dash_cate {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 36px;
+}
+
+.cate_item {
+   width: 100px;
+   height: 100px;
+   border-radius: 7px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #daede2;
+}
+
+/* 车贷 */
+.cate_item.c1bcddudhmh {
+   background-color: #2f3240;
+}
+
+/* 车辆保养 */
+.cate_item.chc5g66kviq {
+   background-color: #2f3240;
+}
+
+/* 房贷 */
+.cate_item.c8s0p77c323 {
+   background-color: #2f3240;
+}
+
+/* 房屋租赁 */
+.cate_item.c0fnhbcle6hg {
+   background-color: #2f3240;
+}
+
+/* 家庭用品 */
+.cate_item.codrjk823mj8 {
+   background-color: #2f3240;
+}
+
+/* 交通 */
+.cate_item.cbsn20th0k2o {
+   background-color: #2f3240;
+}
+
+/* 旅游 */
+.cate_item.cj1h1nohhmmo {
+   background-color: #2f3240;
+}
+
+/* 日常饮食 */
+.cate_item.c3tqndrjqgrg {
+   background-color: #2f3240;
+}
+
+@media screen and (max-width: 680px) {
+   .dashboard {
+      padding-left: 18px;
+      padding-right: 18px;
+   }
+   .cate_item {
+      width: 82px;
+      height: 82px;
+   }
+   .dash_cate {
+      gap: 18px;
+   }
+   .ycard_amount, .mcard_amount {
+      font-size: 36px;
+   }
+   .ycard_title, .mcard_title {
+      font-size: 30px;
+   }
+}

@@ -1,0 +1,32 @@
+.condition_desk {
+   padding: 6px 36px;
+   max-width: 680px;
+   margin: 0 auto;
+   background-color: #414659b0;
+   border-radius: 5px;
+   margin-top: 36px;
+   min-height: 136px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 18px;
+}
+
+.site-calendar-demo-card {
+   width: 300px;
+   border: 1px solid #f0f0f0;
+   border-radius: 2px;
+}
+
+.cond_title {
+   font-size: 18px;
+   color: #daede2;
+   font-weight: bold;
+   margin-bottom: 7px;
+}
+@media screen and (max-width: 680px) {
+   .condition_desk {
+      padding-left: 18px;
+      padding-right: 18px;
+   }
+}

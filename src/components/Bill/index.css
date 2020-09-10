@@ -1,0 +1,149 @@
+.bill-item {
+   padding: 7px;
+   height: 136px;
+   /* box-shadow: 0 0 5px 0px #b6fbff; */
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   color: #daede2;
+}
+.tmp1 {
+   grid-column: 1 / 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.tmp2 {
+   grid-column: 2 / 4;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.tmp3 {
+   position: relative;
+   grid-column: 4 / 6;
+   justify-self: self-end;
+   align-self: center;
+   font-size: 36px;
+   font-weight: bold;
+}
+.amount {
+   z-index: 1;
+   position: relative;
+}
+.bill-income .tmp3::after, .bill-expense .tmp3::after {
+   content: '收入';
+   position: absolute;
+   font-size: 36px;
+   font-weight: 100;
+   bottom: 0;
+   transform: translateY(50%);
+   opacity: .3;
+   right: 0;
+   color: #81ed41;
+}
+.bill-expense .tmp3::after {
+   content: '支出';
+   color: #fc6f6e;
+}
+.bill-item + .bill-item {
+   border-top: 1px solid #4b5065;
+}
+.bill-expense {
+   color: #daede2;
+}
+.bill-income {
+   color: #daede2;
+}
+ul {
+   padding: 0 36px;
+   max-width: 680px;
+   margin: 0 auto;
+   background-color: #414659b0;
+   border-radius: 5px;
+}
+.bill-ul {
+   margin-top: 36px;
+}
+li {
+   list-style-type: none;
+}
+.category {
+   font-weight: bold;
+   font-size: 18px;
+}
+.time {
+   opacity: 0.6;
+   font-weight: bold;
+}
+.avator {
+   width: 57px;
+   height: 57px;
+   background-color: #2f3240;
+   border-radius: 7px;
+}
+/* 车贷 */
+.c1bcddudhmh .avator { 
+
+}
+/* 车辆保养 */
+.chc5g66kviq .avator {
+
+}
+/* 房贷 */
+.c8s0p77c323 .avator {
+   
+}
+/* 房屋租赁 */
+.c0fnhbcle6hg .avator {
+   
+}
+/* 家庭用品 */
+.codrjk823mj8 .avator {
+   
+}
+/* 交通 */
+.cbsn20th0k2o .avator {
+   
+}
+/* 旅游 */
+.cj1h1nohhmmo .avator {
+   
+}
+/* 日常饮食 */
+.c3tqndrjqgrg .avator {
+   
+}
+/* 工资 */
+.cs73ijpispio .avator {
+   
+}
+/* 股票投资 */
+.c1vjj47vpd28 .avator {
+   
+}
+/* 基金投资 */
+.c5il79e11628 .avator {
+   
+}
+
+@media screen and (max-width: 680px) {
+   .tmp3 {
+      font-size: 19px;
+   }
+   .category {
+      font-size: 16px;
+   }
+   .time {
+      font-size: 12px;
+   }
+   .avator {
+      width: 36px;
+      height: 36px;
+   }
+   ul {
+      padding: 0 18px;
+   }
+   .bill-income .tmp3::after, .bill-expense .tmp3::after {
+      font-size: 26px;
+   }
+}

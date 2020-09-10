@@ -1,0 +1,31 @@
+.creator {
+   padding: 6px 36px;
+   max-width: 680px;
+   margin: 0 auto;
+   background-color: #414659b0;
+   border-radius: 5px;
+   margin-top: 36px;
+   min-height: 136px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 18px;
+}
+.crt_title {
+   font-size: 18px;
+   color: #daede2;
+   font-weight: bold;
+   margin-bottom: 7px;
+}
+.rightbtn {
+   flex-grow: 1;
+   flex-shrink: 1;
+   text-align: right;
+}
+
+@media screen and (max-width: 680px) {
+   .creator {
+      padding-left: 18px;
+      padding-right: 18px;
+   }
+}
